@@ -32,12 +32,19 @@ namespace HelloCoreMVC.Controllers
             //ViewData["result"] = result;
 
             //return View();
-            var productLists = new List<Product>();
-            productLists.Add(new Product{ProductId = "001",ProductName = "Using VB",ProductPrice = 299});
-            productLists.Add(new Product { ProductId = "002", ProductName = "Using C#", ProductPrice = 399 });
-            productLists.Add(new Product { ProductId = "003", ProductName = "Using ASP.NET Core MVC", ProductPrice = 275 });
+            //var productLists = new List<Product>();
+            //productLists.Add(new Product{ProductId = "001",ProductName = "Using VB",ProductPrice = 299});
+            //productLists.Add(new Product { ProductId = "002", ProductName = "Using C#", ProductPrice = 399 });
+            //productLists.Add(new Product { ProductId = "003", ProductName = "Using ASP.NET Core MVC", ProductPrice = 275 });
 
-            return View(productLists);
+            //return View(productLists);
+
+            var p = new Product();
+            p.ProductId = "101";
+            p.ProductName = "ASP.NET Core MVC Basic";
+            p.ProductPrice = 229;
+
+            return View(p);
         }
 
         public IActionResult Product()
