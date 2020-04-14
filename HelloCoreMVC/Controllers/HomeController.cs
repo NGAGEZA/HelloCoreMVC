@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using HelloCoreMVC.Models;
 
@@ -40,9 +36,9 @@ namespace HelloCoreMVC.Controllers
             //return View(productLists);
 
             var p = new Product();
-            p.ProductId = "101";
-            p.ProductName = "ASP.NET Core MVC Basic";
-            p.ProductPrice = 229;
+            p.ProductId = "512";
+            p.ProductName = "พื้นฐานการใช้งาน ASP.NET Core MVC Basic";
+            p.ProductPrice = 209;
 
             return View(p);
         }
